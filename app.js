@@ -14,3 +14,8 @@ sayHi(names.john);
 sayHi(names.peter);
 sayHi(john);
 sayHi(peter);
+
+
+const data = require('./6-alternative-flavor');
+console.log(data)
+
