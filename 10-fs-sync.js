@@ -1,5 +1,7 @@
 const { readFileSync, writeFileSync } = require('fs');
 
+console.log('start');
+
 //read files
 const first = readFileSync('./content/first.txt', 'utf8');
 const second = readFileSync('./content/second.txt', 'utf8');
@@ -16,3 +18,6 @@ writeFileSync(
 // 'a': Open file for appending. The file is created if it does not exist.
 
 console.log('done: write file result-sync.txt');
+
+//after write file task was done, start next task
+console.log('starting the next one');

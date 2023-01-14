@@ -31,3 +31,5 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
     );
   });
 });
+
+console.log('starting the next one');
