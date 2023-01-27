@@ -20,3 +20,54 @@
 // const newItems = _.flattenDeep(items);
 // console.log(newItems);
 // -----------------end import module--------------------------------
+
+
+
+// -----------------Threads, Event Loop, Call Stack and Task Queue-----------------
+// Example 1
+// const fn1 = (time) => {
+//     setTimeout(() => {
+//         console.log('fn1:',time)
+//     }, time);
+// }
+
+// const fn2 = () => {
+//     fn1(5000);
+//     setTimeout(() => {
+//         console.log('fn2')
+//     }, 100);
+//     fn1(100);
+// }
+
+// const fn3 = () => {
+//     fn2();
+// }
+
+// fn3();
+
+
+// Example 2
+// https://www.youtube.com/watch?v=d3OVNw_Qmik
+// console.log('start')
+
+// setTimeout(() => {
+//     console.log(1)
+// }, 5);
+
+// setTimeout(() => {
+//     setTimeout(() => {
+//         console.log(2)
+//     }, 10000);
+// }, 5);
+
+// setTimeout(() => {
+//     console.log(3)
+// }, 5);
+
+// const msg = () => {
+//     console.log('msg')
+// }
+
+// msg();
+
+// -----------------end Threads, Event Loop, Call Stack and Task Queue-----------------
